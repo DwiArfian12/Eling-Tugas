@@ -1,2 +1,2 @@
 # Eling-Tugas
- A website that can reminds you about your tasls
+ A website that can reminds you about your tasks
