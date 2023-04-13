@@ -12,3 +12,152 @@
     font-family: reg;
     src: url("../font/gadugi-normal.ttf");
 }
+
+@font-face {
+    font-family: demi;
+    src: url("../font/AvantGardeDemiBT.ttf");
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Navbar */
+nav {
+    height: 15%;
+    width: 100%;
+    background: blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 5%;
+    box-sizing: border-box;
+    align-items: center;
+    background: linear-gradient(to right, #c165dd, #5155cf);
+}
+
+nav .logo img {
+    width: 30%;
+}
+
+nav .menu ul {
+    font-family: 'Segoe UI';
+    list-style: none;
+    font-weight: 650;
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+    font-size: 22px;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav .menu li a:hover {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+}
+
+.active {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+    top: 13px;
+    position: relative;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 30px;
+    height: 75.1%;
+}
+
+main .left {
+    width: 50%;
+    padding: 5% 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .left .title {
+    font-size: 2.3rem;
+    color: #3b5998;
+    font-family: demi;
+}
+
+main .left hr {
+    margin-top: -20px;
+    border: 2.5px solid #3b5998;
+    width: 100%;
+}
+
+main .left .tagline {
+    font-family: 'Segoe UI';
+    font-size: 2rem;
+    display: flex;
+    line-height: 3.2rem;
+}
+
+main .right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .right img {
+    width: 60%;
+    animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    height: 8%;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #c165dd, #5155cf);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo-footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer .cr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    color: #fff;
+    width: 30%;
+}
+
+footer .cr .sec {
+    margin-top: -13px;
+}
+
+footer .cr a {
+    text-decoration: none;
+    color: #fff;
+}
