@@ -1,0 +1,14 @@
+@font-face {
+    font-family: bold;
+    src: url("../font/gadugi-bold.ttf");
+}
+
+@font-face {
+    font-family: smbold;
+    src: url("../font/gadugi-gras.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../font/gadugi-normal.ttf");
+}
