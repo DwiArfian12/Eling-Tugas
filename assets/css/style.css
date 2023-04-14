@@ -19,8 +19,9 @@
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Navbar */
@@ -117,23 +118,22 @@ main .right img {
 
 @keyframes mover {
     0% {
-        transform: translateY(0);
+        transform: translateY(10px);  
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 }
 
 /* Footer */
 footer {
-    display: flex;
     height: 8%;
     width: 100%;
     box-sizing: border-box;
     background: linear-gradient(to right, #c165dd, #5155cf);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 
 footer .logo-footer {
@@ -146,14 +146,17 @@ footer .cr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Segoe UI';
     font-weight: bolder;
     color: #fff;
-    width: 30%;
+    width: 100%;
+    line-height: 0px;
 }
 
-footer .cr .sec {
-    margin-top: -13px;
+footer .cr p {
+    text-align: center;
+    margin: 12px;
 }
 
 footer .cr a {
